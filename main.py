@@ -11,7 +11,7 @@ def startsWithIs(string):
     else:
       return False
   except ValueError:
-    # IF the string index method throws an error, that means 'is' is not in the string at all
+    # IF the string index method throws an error, that means the string does not contain 'is' at all
     return False
 
 myLst = list(filter(startsWithIs, dir(math)))
